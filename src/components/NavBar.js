@@ -3,7 +3,7 @@ const NavBar = () =>{
    <>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a href="#" className="btn btn-ghost normal-case text-xl">Las Delicias</a>
+          <link to="#" className="btn btn-ghost normal-case text-xl">Las Delicias</link>
         </div>
         <div className="form-control">
           <div className="input-group">
@@ -34,18 +34,18 @@ const NavBar = () =>{
           <div className="dropdown dropdown-end">
             <label tabindex="0" className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                <img src="https://api.lorem.space/image/face?hash=33791" />
+                <img src="https://api.lorem.space/image/face?hash=33791" alt="" />
               </div>
             </label>
             <ul tabindex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li>
-                <a className="justify-between">
+                <link className="justify-between">
                   Perfil
                   <span className="badge">Nuevo!</span>
-                </a>
+                </link>
               </li>
-              <li><a>Configuracion</a></li>
-              <li><a>Cerrar sesion</a></li>
+              <li><link>Configuracion</link></li>
+              <li><link>Cerrar sesion</link></li>
             </ul>
           </div>
         </div>
