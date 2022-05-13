@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { robotsData } from "../data/robotsData"
 
 const RobotDetail = () => {
@@ -16,7 +16,7 @@ const RobotDetail = () => {
       }
      })()
 
-   }, [])
+   }, [robotId])
 
    const getRobotDetail = () => {
       return new Promise( (resolve) => {
@@ -30,9 +30,10 @@ const RobotDetail = () => {
    return(
       <>
          <div>RobotDetail - {robotId}</div>
-         <strong>{robot.id}</strong>
-         <strong>{robot.name}</strong>
-         <strong>{robot.battery}</strong>
+         <strong className="p-2">{robot.id}</strong>
+         <strong className="p-2">{robot.name}</strong>
+         <strong className="p-2">{robot.battery}</strong>
+         <div className="m-5"><Link to='/robots/1'>Bender</Link></div>
       </>
    )
 }
